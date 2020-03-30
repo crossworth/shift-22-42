@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.crossworth.shift2242.Controller">
+    <children>
+        <VBox alignment="TOP_CENTER" maxHeight="275.0" maxWidth="300.0" minHeight="275.0" minWidth="300.0" prefHeight="275.0" prefWidth="300.0">
+            <children>
+                <Label prefHeight="39.0" prefWidth="602.0" text="Shift-22-42" textAlignment="CENTER">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="input">
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </TextField>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="encrypt" mnemonicParsing="false" onAction="#onEncryptAction" text="Criptografar">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                        <Button fx:id="decrypt" mnemonicParsing="false" onAction="#onDecryptAction" text="Descriptografar ">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <TextArea fx:id="result" prefHeight="200.0" prefWidth="200.0" />
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
